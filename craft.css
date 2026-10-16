@@ -1,0 +1,83 @@
+/* Restrained material details, using the studio's own illustrations and paper. */
+.hero{padding-top:55px}.hero .intro{margin-top:30px}
+.art-stage{padding:34px 26px 30px}
+.pink-shape{inset:18px 8px 16px;border-radius:39% 45% 6% 7% / 35% 37% 6% 6%;opacity:.83}
+.pink-shape:after{background-image:url('assets/papel.webp');background-size:450px;mix-blend-mode:multiply;opacity:.35}
+.art-stage:after,.birthday-grid>figure:after{content:'';position:absolute;z-index:2;width:108px;height:34px;top:23px;left:39%;transform:rotate(-8deg);background:linear-gradient(#e6c985c9,#dfbe73b8),url('assets/papel.webp');background-size:auto,180px;clip-path:polygon(3% 0,98% 3%,96% 14%,100% 27%,96% 43%,99% 56%,96% 70%,99% 83%,97% 100%,1% 95%,4% 79%,0 64%,4% 49%,1% 32%,4% 18%);pointer-events:none}
+.hero-photo{margin:12px 0 28px;border-width:10px;box-shadow:2px 6px 12px #263f3814}
+.art-stage figcaption{padding:7px 12px;transform:rotate(-1deg);font-size:13px;box-shadow:1px 2px 0 #263f3810}
+.workshop-row{display:block}.workshop-list{list-style:none}
+.craft-illustration{object-fit:contain;pointer-events:none}
+.pencils{width:180px;height:180px;margin:38px 0 0 10px;transform:rotate(-5deg)}
+.process-notes li{display:block}
+.birthday-grid>figure{position:relative;padding:14px 0 0}
+.birthday-grid>figure:after{top:0;left:35%;transform:rotate(7deg);width:120px}
+.birthday-photo{border-radius:3px;border:9px solid var(--paper);box-shadow:3px 6px 15px #263f3814;transform:rotate(-1.3deg)}
+.birthday-grid>div{position:relative}.cake{float:right;width:95px;height:120px;margin:0 0 16px 18px;transform:rotate(5deg)}
+.birthday-audience{font-size:17px;max-width:37ch}
+.techniques span{border:0;border-radius:0;background:var(--paper);padding:6px 13px;box-shadow:1px 2px 0 #263f3815}
+.techniques span:nth-child(1){transform:rotate(-2deg)}.techniques span:nth-child(3){transform:rotate(2deg)}
+.event-audience{font-size:14px;margin-bottom:24px}
+.section-lead h2,.team-heading h2{margin-top:0}
+@media(max-width:760px){.hero{padding-top:25px}.art-stage{padding:22px 22px 26px;margin-top:20px}.art-stage:after{top:12px;width:88px;height:27px}.pencils{width:112px;height:112px;margin:22px 0 0}.cake{width:72px;height:94px;margin-left:10px}.birthday-photo{border-width:7px;border-radius:2px}.birthday-grid>figure:after{width:96px;height:28px}.birthday-audience{font-size:16px}.workshop-row{padding:25px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Paper and printed ink: texture stays off controls and reading text. */
+body:before{background-image:url('assets/papel-fibras.webp');background-size:720px 900px;opacity:.28;mix-blend-mode:multiply}
+h1,h2{mask-image:url('assets/ink-grain.svg');mask-mode:luminance;mask-repeat:repeat;mask-size:180px 180px}
+.hero h1{letter-spacing:-.03em}
+.workshop-visual-column{display:flex;flex-direction:column}
+.workshop-journal{display:flex;flex-direction:column;justify-content:space-between;flex:1;gap:58px;margin-top:38px;padding:12px 18px 35px 4px}
+.journal-photo{width:88%;max-width:325px;position:relative}
+.journal-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.journal-photo figcaption{font-size:13px;padding:8px 2px;position:relative;max-width:26ch}
+.drawing-print{transform:rotate(-2deg)}
+.drawing-print img{aspect-ratio:1;object-position:center 61%}
+.ceramics-print{align-self:flex-end;transform:rotate(2deg)}
+.glass-print{transform:rotate(-1deg);width:77%;margin-left:8px}
+.glass-print img{aspect-ratio:4/3;object-position:center 55%}
+.postage-frame{position:relative;isolation:isolate;padding:15px;background:transparent}
+.postage-frame:before{content:'';position:absolute;inset:0;z-index:-1;background:#fff9ec url('assets/papel-fibras.webp') center/380px;mask:radial-gradient(circle 3px at 3px 3px,transparent 98%,#000) -3px -3px/12px 12px;box-shadow:inset 0 0 0 1px #263f3818}
+.postage-frame:after{content:'';position:absolute;inset:8px;border:1px solid #306ba561;pointer-events:none;box-shadow:1.5px 1px 0 #e5759c55}
+.studio-seal{display:block;position:absolute;width:62px;height:62px;right:-64px;top:5px;background-repeat:no-repeat;background-size:563.2px 307.2px;mix-blend-mode:multiply;pointer-events:none}
+.heart-seal{background-image:url('assets/sellos-corazones.webp');background-position:-255px -72px;transform:rotate(12deg)}
+.ring-seal{background-image:url('assets/sellos-formas.webp');background-position:-490px -73px;transform:rotate(-9deg);width:60px;height:60px;right:-55px}
+.art-stage figcaption{box-shadow:2px 1px 0 #e5759c60,-1px -1px 0 #306ba531}
+.techniques span:nth-child(2){box-shadow:1.5px 1px 0 #306ba555,-1px 0 0 #e5759c55}
+@media(max-width:1050px) and (min-width:761px){.workshop-journal{padding-right:8px;gap:60px}.journal-photo{width:95%}.studio-seal{right:-25px;top:32px}.glass-print{margin-left:0;width:90%}}
+@media(max-width:760px){.workshop-journal{display:grid;grid-template-columns:1fr 1fr;gap:22px 16px;margin-top:22px;padding:8px 8px 20px}.journal-photo,.glass-print{width:100%;margin:0}.glass-print{display:none}.journal-photo img,.drawing-print img{aspect-ratio:1;object-fit:cover}.postage-frame{padding:10px}.postage-frame:after{inset:5px}.postage-frame:before{mask:radial-gradient(circle 2px at 2px 2px,transparent 98%,#000) -2px -2px/9px 9px}.journal-photo figcaption{font-size:12px;line-height:1.5;max-width:100%}.studio-seal{display:none}.workshop-visual-column{display:block}}
+@media(forced-colors:active){h1,h2{mask:none}.postage-frame:before{mask:none}.studio-seal{display:none}}
+body{position:relative}body:before{position:absolute;opacity:.22}
+.postage-frame:before{background-color:#fff9ec;background-blend-mode:multiply;mask:linear-gradient(#000 0 0) center/calc(100% - 8px) calc(100% - 8px) no-repeat,radial-gradient(circle at 50% 0,transparent 3px,#000 3.5px) top/12px 4px repeat-x,radial-gradient(circle at 50% 100%,transparent 3px,#000 3.5px) bottom/12px 4px repeat-x,radial-gradient(circle at 0 50%,transparent 3px,#000 3.5px) left/4px 12px repeat-y,radial-gradient(circle at 100% 50%,transparent 3px,#000 3.5px) right/4px 12px repeat-y}
+.studio-seal{background-color:var(--paper);background-blend-mode:multiply}
+
+/* Controls feel like printed labels, while retaining native keyboard behavior. */
+.button{border:1px solid #244f7a;border-radius:7px 17px 8px 15px;padding:15px 22px;box-shadow:3px 3px 0 #e5759c8c;transition:transform 220ms ease,box-shadow 220ms ease;background-color:#285c90}
+.button:hover{transform:translateY(-2px);box-shadow:4px 5px 0 #e5759c8c}
+.button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #e5759c8c}
+.button .arrow,.workshop-row .text-link .arrow{flex-shrink:0;transition:transform 240ms ease}
+.button:hover .arrow,.workshop-row .text-link:hover .arrow{transform:translate(3px,-3px)}
+.workshop-row .text-link{color:#285c90;border:1px solid #306ba580;padding:9px 15px;gap:20px;border-radius:5px 14px 5px 12px;text-decoration:none;box-shadow:2px 2px 0 #306ba51a;background:#f7f0e1;font-size:14px;transition:transform 220ms ease,box-shadow 220ms ease,background-color 220ms ease}
+.workshop-row .text-link:hover{background:#ece3d1;box-shadow:3px 3px 0 #e5759c66;transform:translateY(-2px)}
+.contact label{font-family:var(--display);font-size:24px;font-weight:700;margin-bottom:14px}
+.select-shell{position:relative;margin-bottom:20px}
+.contact select{appearance:none;min-height:60px;color:var(--ink);background:#faf4e8 url('assets/papel.webp') center/460px;background-blend-mode:multiply;border:1px solid #263f38b0;border-radius:6px 17px 7px 14px;padding:16px 50px 16px 18px;margin:0;box-shadow:3px 3px 0 #263f382b;cursor:pointer;transition:box-shadow 220ms ease}
+.contact select:hover{box-shadow:4px 4px 0 #263f3840}
+.select-shell:after{content:'';position:absolute;right:21px;top:24px;width:8px;height:8px;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(45deg);pointer-events:none}
+.contact option{font:400 16px Inter,Arial,sans-serif;color:var(--ink);background:#faf4e8}
+@supports (appearance:base-select){
+ .contact select,.contact select::picker(select){appearance:base-select}
+ .select-shell:after{display:none}
+ .contact select{padding-right:20px;align-items:center}
+ .contact select::picker-icon{color:var(--blue);transition:rotate 220ms ease}
+ .contact select:open::picker-icon{rotate:180deg}
+ .contact select::picker(select){background:#faf4e8;border:1px solid #263f3870;border-radius:7px 14px 8px 12px;box-shadow:4px 5px 0 #263f3820;margin-top:8px;padding:8px;max-height:320px;overflow:auto}
+ .contact option{padding:12px 14px;min-height:46px;border-radius:4px;cursor:pointer}
+ .contact option:hover,.contact option:focus-visible{background:#e7dfcd}
+ .contact option:checked{background:#e0e7df;color:#234f7a}
+ .contact option::checkmark{color:#285c90}
+}
+.journal-photo .studio-seal{background:none;mix-blend-mode:normal;object-fit:contain;width:72px;height:72px;aspect-ratio:auto;right:-70px;top:1px;transform:rotate(9deg)}
+@media(max-width:1050px) and (min-width:761px){.journal-photo .studio-seal{right:-25px;top:30px}}
+@media(max-width:760px){.contact label{font-size:22px}.button{padding:14px 18px}.workshop-row .text-link{font-size:14px;max-width:100%}}
+@media(prefers-reduced-motion:reduce){.button:hover,.button:active,.workshop-row .text-link:hover,.button:hover .arrow,.workshop-row .text-link:hover .arrow{transform:none}.contact select::picker-icon{transition:none}}
